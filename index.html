@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>律师事务所官网模板 · 六模块响应式演示</title>
+  <meta name="description" content="通用律师事务所官网模板：导航、首屏、业务领域、服务流程、律师团队、联系方式与常见问题。替换文案与图片即可上线。">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <div class="demo-bar" id="demoBar">
+    <span>演示模板 · 内容均为示例，替换文案与图片即可上线</span>
+    <button type="button" id="demoBarClose" aria-label="关闭演示提示">×</button>
+  </div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="你的律所 首页">
+        <span class="brand-mark" aria-hidden="true">律</span>
+        <span class="brand-text">
+          <strong>你的律所</strong>
+          <small>YOUR LAW FIRM</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="主导航">
+        <a href="#home">首页</a>
+        <a href="#practice">业务领域</a>
+        <a href="#process">服务流程</a>
+        <a href="#team">律师团队</a>
+        <a href="#contact">联系方式</a>
+      </nav>
+
+      <a class="header-call" href="tel:00000000000">电话咨询</a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="打开导航菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 首屏 -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="assets/hero-room.jpg" alt="律所会议室示例：深色书架与长条会议桌" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="wrap hero-inner">
+        <p class="eyebrow">诉讼 · 顾问 · 合规</p>
+        <h1>把纠纷解决在<br>成本最低的那一步</h1>
+        <p class="hero-lead">早一点介入，多一半选择。<br>我们先把你的处境和风险讲清楚，再谈怎么打。</p>
+
+        <div class="hero-meta">
+          <span class="status-chip" id="heroStatus" data-state="open">
+            <i class="dot" aria-hidden="true"></i>
+            <span class="status-text">工作时间 09:00 – 18:00</span>
+          </span>
+          <span class="hero-hours">周一至周五 · 首次沟通 30 分钟内不收费</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:00000000000">电话咨询 000-0000 0000</a>
+          <a class="btn btn-ghost" href="#practice">看看能接什么案子</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#practice" aria-label="向下浏览业务领域">
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+        向下浏览
+      </a>
+    </section>
+
+    <!-- 业务领域 -->
+    <section class="practice section" id="practice">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">PRACTICE · 业务领域</p>
+            <h2>我们能接的六类事</h2>
+          </div>
+          <p class="section-note">不在下面这六类里的，也建议先打个电话问一句，我们会告诉你该找谁。</p>
+        </header>
+
+        <div class="practice-grid">
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">01</span>
+              <h3>民商事诉讼</h3>
+            </div>
+            <p class="field-desc">合同纠纷、借贷与担保、工程款结算、侵权损害赔偿。先评估胜诉概率与执行难度，再决定打不打、怎么打。</p>
+            <p class="field-meta">常见场景：欠款要不回来 · 合同被违约 · 装修质量争议</p>
+          </article>
+
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">02</span>
+              <h3>刑事辩护</h3>
+            </div>
+            <p class="field-desc">侦查阶段介入、会见与取保候审申请、庭审辩护。越早介入，可争取的空间越大，笔录阶段的口径尤其关键。</p>
+            <p class="field-meta">常见场景：被采取强制措施 · 涉案财物 · 单位涉刑</p>
+          </article>
+
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">03</span>
+              <h3>婚姻家事</h3>
+            </div>
+            <p class="field-desc">协议离婚与诉讼离婚、房产与股权分割、抚养权与探望权、遗产继承。先把财产底数摸清，再谈方案。</p>
+            <p class="field-meta">常见场景：房产归属 · 隐匿财产 · 遗嘱效力</p>
+          </article>
+
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">04</span>
+              <h3>劳动争议</h3>
+            </div>
+            <p class="field-desc">违法解除的赔偿、加班费与提成、工伤认定、竞业限制与保密。既做员工代理，也做企业端的合规整改。</p>
+            <p class="field-meta">常见场景：被辞退 · 不给加班费 · 工伤不认</p>
+          </article>
+
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">05</span>
+              <h3>企业法律顾问</h3>
+            </div>
+            <p class="field-desc">常年法律顾问、股权结构与合伙人协议、合同模板库、用工与合规体检。按年计费，日常问题随问随答。</p>
+            <p class="field-meta">常见场景：合伙分歧 · 合同没人审 · 用工风险</p>
+          </article>
+
+          <article class="field reveal">
+            <div class="field-head">
+              <span class="field-index">06</span>
+              <h3>合同与文书</h3>
+            </div>
+            <p class="field-desc">合同起草与审查、风险条款提示、律师函与法律意见书。按件计费，交付时逐条说明改了什么、为什么改。</p>
+            <p class="field-meta">常见场景：签约前审查 · 催告与律师函 · 出具意见</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 主理人的话 -->
+    <section class="quote-band" aria-label="合伙人的话">
+      <img src="assets/office-hall.jpg" alt="律所走廊示例：深色木饰面与玻璃门" loading="lazy">
+      <div class="quote-overlay" aria-hidden="true"></div>
+      <figure class="wrap quote-inner">
+        <blockquote>
+          <p>律师的价值不在庭上说了多少话，<br>而在开庭之前替你排掉了多少种坏结果。</p>
+        </blockquote>
+        <figcaption>— 创始人 · 你的名字</figcaption>
+      </figure>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="process section" id="process">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">PROCESS · 服务流程</p>
+            <h2>从第一次通话到结案</h2>
+          </div>
+          <p class="section-note">每一步都有明确产出和费用口径，不做“先交钱再看着办”。</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li>
+            <span class="step-no">01</span>
+            <h4>初次沟通</h4>
+            <p>30 分钟内了解事实经过、你手上有哪些材料，判断这件事属于哪一类、值不值得打。</p>
+          </li>
+          <li>
+            <span class="step-no">02</span>
+            <h4>书面方案与费用</h4>
+            <p>出一份简短的法律意见：可选路径、各自风险与周期，以及收费方式（按件、按阶段或计时）。</p>
+          </li>
+          <li>
+            <span class="step-no">03</span>
+            <h4>签约与办理</h4>
+            <p>签委托合同、明确授权范围。案件进展按节点同步，重要文书先发你看再提交。</p>
+          </li>
+          <li>
+            <span class="step-no">04</span>
+            <h4>结案与归档</h4>
+            <p>交付判决、调解书或合同文本，附一份案件小结，写清已了结什么、还留有哪些后续权利。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 律师团队 -->
+    <section class="team section" id="team">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">TEAM · 律师团队</p>
+            <h2>谁在办你的案子</h2>
+          </div>
+          <p class="section-note">接案人就是办案人，不转手给助理。</p>
+        </header>
+
+        <div class="team-grid">
+          <article class="member reveal">
+            <div class="member-mark" aria-hidden="true">【姓】</div>
+            <h4>【律师姓名】</h4>
+            <p class="member-role">创始合伙人 · 执业 XX 年</p>
+            <p class="member-desc">主做民商事诉讼与企业顾问，擅长把复杂的多方纠纷拆成可执行的几件事。</p>
+            <p class="member-tags">诉讼 · 顾问 · 工程款</p>
+          </article>
+
+          <article class="member reveal">
+            <div class="member-mark" aria-hidden="true">【姓】</div>
+            <h4>【律师姓名】</h4>
+            <p class="member-role">合伙人 · 执业 XX 年</p>
+            <p class="member-desc">主做刑事辩护与婚姻家事，侦查阶段介入经验较多，会见与沟通节奏稳。</p>
+            <p class="member-tags">刑事 · 家事 · 继承</p>
+          </article>
+
+          <article class="member reveal">
+            <div class="member-mark" aria-hidden="true">【姓】</div>
+            <h4>【律师姓名】</h4>
+            <p class="member-role">主办律师 · 执业 XX 年</p>
+            <p class="member-desc">主做劳动争议与合同文书，熟悉仲裁流程与用工合规的落地细节。</p>
+            <p class="member-tags">劳动 · 合同 · 仲裁</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact section" id="contact">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">CONTACT · 联系方式</p>
+            <h2>约一次面谈或线上沟通</h2>
+          </div>
+          <p class="section-note">来访请提前预约，避免与庭审冲突。</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <p class="card-label">工作时间</p>
+            <ul class="hours-list">
+              <li>
+                <span class="hours-day">周一 – 周五</span>
+                <span class="hours-time">09:00 – 18:00</span>
+              </li>
+              <li>
+                <span class="hours-day">周末与晚间</span>
+                <span class="hours-time">可预约</span>
+              </li>
+              <li>
+                <span class="hours-day">法定节假日</span>
+                <span class="hours-time is-off">休息</span>
+              </li>
+            </ul>
+            <p class="hours-note">紧急事项（如已被采取强制措施）请直接电话联系，不受上述时间限制。</p>
+            <p class="status-line" id="openStatus" data-state="open">
+              <i class="dot" aria-hidden="true"></i>
+              <span class="status-text">正在确认办公状态…</span>
+            </p>
+          </div>
+
+          <div class="contact-card address-card reveal">
+            <div class="address-media">
+              <img src="assets/desk-docs.jpg" alt="办公桌面示例：合同文件与钢笔" loading="lazy">
+            </div>
+            <div class="address-body">
+              <p class="card-label">地址与联系</p>
+              <dl class="address-list">
+                <div>
+                  <dt>办公地址</dt>
+                  <dd>XX 市 XX 区 XX 路 XX 号 XX 大厦 XX 层</dd>
+                </div>
+                <div>
+                  <dt>咨询电话</dt>
+                  <dd><a href="tel:00000000000">000-0000 0000</a></dd>
+                </div>
+                <div>
+                  <dt>电子邮箱</dt>
+                  <dd>【你的邮箱】</dd>
+                </div>
+                <div>
+                  <dt>来访提示</dt>
+                  <dd>请携带与案件相关的合同、凭证、通知文书原件或复印件。</dd>
+                </div>
+              </dl>
+              <div class="address-actions">
+                <a class="btn btn-primary" href="tel:00000000000">拨打电话</a>
+                <button class="btn btn-outline" id="copyAddress" type="button" data-address="XX 市 XX 区 XX 路 XX 号 XX 大厦 XX 层">复制地址</button>
+              </div>
+              <p class="demo-note">以上为演示信息，正式上线前请替换为真实律所资料。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq-wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">FAQ · 常见问题</p>
+            <h2>委托之前，你可能想知道</h2>
+          </div>
+        </header>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>
+              <span>律师费怎么收？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>三种方式：按件（如合同审查、律师函）、按阶段（如一审、二审各计）、按年（企业法律顾问）。诉讼类可约定“基础费＋结果提成”，具体比例受当地收费办法约束，方案里会写清。首次 30 分钟沟通不收费。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>第一次咨询要带什么？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>带上能证明事实的材料：合同、转账记录、聊天记录、通知或传票、身份证件。没有原件带照片也可以，先把时间线和金额理清，沟通效率会高很多。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>可以只做线上沟通吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>咨询、合同审查、方案设计可以全程线上。需要出庭、会见或到行政机关办理的事项，必须由律师到场，这部分不能远程替代。</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>我的事会被说出去吗？</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>保密是法定义务，不因是否签约而改变。未经你同意，我们不会对外披露案情、姓名和材料；宣传中引用案例会做去标识化处理。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-top">
+        <a class="footer-brand" href="#home">
+          <span class="footer-mark" aria-hidden="true">律</span>
+          <span>
+            <strong>你的律所</strong>
+            <small>YOUR LAW FIRM</small>
+          </span>
+        </a>
+        <nav class="footer-nav" aria-label="页脚导航">
+          <a href="#practice">业务领域</a>
+          <a href="#process">服务流程</a>
+          <a href="#team">律师团队</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-contact">咨询 000-0000 0000 · XX 市 XX 区 XX 路 XX 号 XX 大厦 XX 层</p>
+        <p class="footer-copy">© 2026 你的律所 · 保留所有权利（演示页面，信息均为示例）</p>
+        <p class="footer-icp">ICP 备案号：【待填】</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
