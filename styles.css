@@ -628,6 +628,26 @@ img {
   background: var(--cream);
 }
 
+.member-photo {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.member-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+  filter: saturate(0.82) contrast(1.02);
+}
+
+/* 无照片时改回姓氏方框：把 .member-photo 换回 .member-mark 并写入姓氏 */
 .member-mark {
   width: 56px;
   height: 56px;
