@@ -670,6 +670,75 @@ img {
   color: var(--ink-soft);
 }
 
+/* ---------- 案例 ---------- */
+
+.cases {
+  background: var(--cream);
+}
+
+.case-list {
+  display: grid;
+  gap: 22px;
+}
+
+.case {
+  padding: 32px 32px 28px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.case-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.case-no {
+  font-family: "Songti SC", "SimSun", serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.case-tag {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+}
+
+.case-rows {
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.case-rows > div {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 22px;
+}
+
+.case-rows dt {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.case-rows dd {
+  margin: 0;
+  max-width: 52em;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
 /* ---------- 联系 ---------- */
 
 .contact {
@@ -1086,6 +1155,13 @@ img {
   }
   .steps {
     grid-template-columns: 1fr;
+  }
+  .case {
+    padding: 26px 22px 24px;
+  }
+  .case-rows > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
   .section-head {
     flex-direction: column;
