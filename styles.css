@@ -4,14 +4,14 @@
    ============================================================ */
 
 :root {
-  --cream: #f6f2e9;
-  --cream-2: #eee7d9;
-  --paper: #fffdf8;
-  --ink: #1c2620;
-  --ink-soft: #5d6359;
-  --copper: #8a6438;
-  --copper-dark: #6d4d29;
-  --line: rgba(28, 38, 32, 0.12);
+  --cream: #f4f3ef;
+  --cream-2: #e8e6e0;
+  --paper: #fbfaf7;
+  --ink: #16191b;
+  --ink-soft: #5b6064;
+  --accent: #2b3a47;
+  --accent-dark: #1b262f;
+  --line: rgba(22, 25, 27, 0.11);
   --radius: 4px;
   --max: 1160px;
   --demo-h: 0px;
@@ -104,7 +104,7 @@ img {
 }
 
 .demo-bar button:hover {
-  background: rgba(246, 242, 233, 0.14);
+  background: rgba(244, 243, 239, 0.14);
 }
 
 .skip-link {
@@ -136,7 +136,7 @@ img {
 
 .site-header.is-scrolled {
   color: var(--ink);
-  background-color: rgba(246, 242, 233, 0.96);
+  background-color: rgba(244, 243, 239, 0.96);
   background-image: none;
   box-shadow: 0 1px 0 var(--line);
   backdrop-filter: blur(8px);
@@ -208,7 +208,7 @@ img {
   right: 100%;
   bottom: 0;
   height: 1px;
-  background: var(--copper);
+  background: var(--accent);
   transition: right 0.28s var(--ease);
 }
 
@@ -339,11 +339,11 @@ img {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #8fae7c;
+  background: #9fb3bd;
 }
 
 .status-chip[data-state="closed"] .dot {
-  background: #c08a5a;
+  background: #bda98a;
 }
 
 .status-chip[data-state="closed"] {
@@ -445,7 +445,7 @@ img {
   margin: 0 0 10px;
   font-size: 11px;
   letter-spacing: 0.26em;
-  color: var(--copper);
+  color: var(--accent);
 }
 
 .section-head h2 {
@@ -495,7 +495,7 @@ img {
   font-family: "Songti SC", "SimSun", serif;
   font-size: 13px;
   letter-spacing: 0.1em;
-  color: var(--copper);
+  color: var(--accent);
 }
 
 .field h3 {
@@ -506,7 +506,7 @@ img {
   margin: 0;
   font-size: 14.5px;
   line-height: 1.85;
-  color: #33403a;
+  color: #2c353b;
 }
 
 .field-meta {
@@ -564,7 +564,7 @@ img {
   margin-top: 22px;
   font-size: 13px;
   letter-spacing: 0.16em;
-  color: rgba(246, 242, 233, 0.72);
+  color: rgba(244, 243, 239, 0.72);
 }
 
 /* ---------- 流程 ---------- */
@@ -578,7 +578,7 @@ img {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
 }
 
@@ -593,7 +593,7 @@ img {
   font-family: "Songti SC", "SimSun", serif;
   font-size: 13px;
   letter-spacing: 0.12em;
-  color: var(--copper);
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -639,7 +639,7 @@ img {
   background: var(--paper);
   font-family: "Songti SC", "SimSun", serif;
   font-size: 16px;
-  color: var(--copper);
+  color: var(--accent);
 }
 
 .member h4 {
@@ -651,7 +651,7 @@ img {
   margin: 0 0 14px;
   font-size: 12.5px;
   letter-spacing: 0.06em;
-  color: var(--copper);
+  color: var(--accent);
 }
 
 .member-desc {
@@ -694,7 +694,7 @@ img {
   margin: 0 0 18px;
   font-size: 12px;
   letter-spacing: 0.16em;
-  color: var(--copper);
+  color: var(--accent);
 }
 
 .hours-list {
@@ -743,11 +743,11 @@ img {
 }
 
 .status-line[data-state="open"] .dot {
-  background: #6f8c5f;
+  background: #4d6675;
 }
 
 .status-line[data-state="closed"] .dot {
-  background: #b07c4f;
+  background: #85715a;
 }
 
 .address-card {
@@ -790,7 +790,7 @@ img {
 }
 
 .address-list dd a {
-  color: var(--copper);
+  color: var(--accent);
   border-bottom: 1px solid currentColor;
 }
 
@@ -863,7 +863,7 @@ img {
 .faq-icon::after {
   content: "";
   position: absolute;
-  background: var(--copper);
+  background: var(--accent);
   transition: transform 0.28s var(--ease), opacity 0.28s var(--ease);
 }
 
@@ -912,7 +912,7 @@ img {
   justify-content: space-between;
   gap: 24px;
   padding-bottom: 34px;
-  border-bottom: 1px solid rgba(246, 242, 233, 0.16);
+  border-bottom: 1px solid rgba(244, 243, 239, 0.16);
 }
 
 .footer-brand {
@@ -926,7 +926,7 @@ img {
   height: 42px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(246, 242, 233, 0.4);
+  border: 1px solid rgba(244, 243, 239, 0.4);
   border-radius: 2px;
   font-family: "Songti SC", "SimSun", serif;
   font-size: 20px;
@@ -943,7 +943,7 @@ img {
   display: block;
   font-size: 10px;
   letter-spacing: 0.22em;
-  color: rgba(246, 242, 233, 0.55);
+  color: rgba(244, 243, 239, 0.55);
 }
 
 .footer-nav {
@@ -951,7 +951,7 @@ img {
   flex-wrap: wrap;
   gap: 24px;
   font-size: 14px;
-  color: rgba(246, 242, 233, 0.78);
+  color: rgba(244, 243, 239, 0.78);
 }
 
 .footer-nav a:hover {
@@ -961,7 +961,7 @@ img {
 .footer-bottom {
   padding-top: 26px;
   font-size: 13px;
-  color: rgba(246, 242, 233, 0.6);
+  color: rgba(244, 243, 239, 0.6);
   line-height: 2;
 }
 
@@ -1018,8 +1018,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .steps {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 24px;
+    grid-template-columns: 1fr;
+    gap: 26px;
   }
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
