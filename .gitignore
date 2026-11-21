@@ -1,4 +1,5 @@
 _preview-*.html
+_shot-*.html
 .screenshots/
 .trae-html-share-packages/
 .DS_Store
